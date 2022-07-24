@@ -1,0 +1,46 @@
+using System;
+using System.Text;
+
+class MainClass {
+  public static void Main (string[] args) {
+    String a; 
+    String b;
+    String c;
+
+    a = Console.ReadLine();
+    b = Console.ReadLine();
+    c = Console.ReadLine();
+
+    if ((a == "vertebrado") && (b == "ave")  && (c == "carnivoro")) {
+      Console.WriteLine("aguia\n");
+    }
+
+    if ((a == "vertebrado") && (b == "ave")  && (c == "onivoro")) {
+      Console.WriteLine("pomba\n");
+    }
+
+    if ((a == "vertebrado") && (b == "mamifero")  && (c == "onivoro")) {
+      Console.WriteLine("homem\n");
+    }
+
+    if ((a == "vertebrado") && (b == "mamifero")  && (c == "herbivoro")) {
+      Console.WriteLine("vaca\n");
+    }
+
+    if ((a == "invertebrado") && (b == "inseto")  && (c == "hematofago")) {
+      Console.WriteLine("pulga\n");
+    }
+
+    if ((a ==  "invertebrado") && (b == "inseto")  && (c == "herbivoro")) {
+      Console.WriteLine("lagarta\n");
+    }
+
+    if ((a  == "invertebrado") && (b == "anelideo") && (c == "hematofago")) {
+      Console.WriteLine("sanguessuga\n");
+    }
+
+    if ((a == "invertebrado") && (b == "anelideo") && (c == "onivoro")) {
+      Console.WriteLine("minhoca\n");
+    }
+  }
+}
