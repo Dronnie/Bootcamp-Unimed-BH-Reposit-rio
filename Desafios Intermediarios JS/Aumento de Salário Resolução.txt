@@ -1,0 +1,12 @@
+const salario = parseFloat(gets())
+let percentual;
+
+salario <= 400.00   ? percentual = 15 :
+salario <= 800.00   ? percentual = 12 :
+salario <= 1200.00  ? percentual = 10 :
+salario <= 2000.00  ? percentual = 7  
+                    : percentual = 4
+
+console.log(`Novo salario: ${(salario + (salario * (percentual / 100))).toFixed(2)}`)
+console.log(`Reajuste ganho: ${(salario * (percentual / 100)).toFixed(2)}`)
+console.log(`Em percentual: ${percentual} %`)
